@@ -28,6 +28,7 @@ int main()
     << " !" << endl;
 
     cout << "Hope you like my Tom & Jerry ASCII art... \n\n";
-    cout << l1 << endl << l2 << endl << l3 << endl << l4 << endl << l5 << endl;
+    cout << l1 << endl << l2 << endl << l3
+         << endl << l4 << endl << l5 << endl;
 
 };
