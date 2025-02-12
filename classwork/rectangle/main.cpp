@@ -24,7 +24,7 @@ using namespace std;
         " of a rectangle." << endl;
     }
 
-    // prompt for sides
+    // Pompt for sides
     void promptSides (string name, float &s1, float &s2)
     
     {
@@ -34,24 +34,14 @@ using namespace std;
     }
     
     // Calculate area and perimeter of rectangle
-    float calP (float s1, float s2)
-    
-    {
-        perim = (s1*2) + (s2*2);
-        return perim;
-    }
-    
-    float calA (float s1, float s2) 
-    
-    {
-        area = s1*s2;
-        return area;
-    }
+
     void calcAll (float s1, float s2, float &area, float &perim)
     {
-        perim = calP(s1,s2);
-        area = calA(s1,s2);
+        perim = (s1*2) + (s2*2);
+        area = s1*s2;
     }
+
+    // Print values
     void printVals(float s1, float s2, float area, float perim)
     
     {
