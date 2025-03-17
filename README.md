@@ -17,4 +17,6 @@ Lab3 - distance.exe - \labs\l3
 HW1 - main.cpp - \homework\hw1
 ---
 HW2 - circle.exe - \homework\hw2
---
+---
+HW3 - calculator.exe - \homework\hw3
+---
