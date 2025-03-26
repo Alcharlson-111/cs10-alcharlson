@@ -10,6 +10,8 @@ Lab2 - lab2.exe - \labs\l2
 ---
 Lab3 - distance.exe - \labs\l3
 --- 
+Lab4 - stats.exe - \labs\l3
+--- 
 
 ----- FINISHED HW  ------
 //
@@ -18,5 +20,5 @@ HW1 - main.cpp - \homework\hw1
 ---
 HW2 - circle.exe - \homework\hw2
 ---
-HW3 - calculator.exe - \homework\hw3
+HW3 - calculator.exe - \homework\hw3 
 ---
