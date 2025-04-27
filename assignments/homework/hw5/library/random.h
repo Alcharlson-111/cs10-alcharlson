@@ -14,14 +14,14 @@ using namespace std;
 
 
 // Generate random number
-int ranNum();
+int randomNumber();
 
 // User Handling
 void greeting(); 
 
 // Guess Handling
 void readNumber(int&);
-void guessAssignment(int&); 
+void guessAssignment(int&, vector<int>&); 
 int checkGuess(int, int&); 
 void tests();
 bool game();
