@@ -16,6 +16,8 @@ Lab5 - main.exe - \labs\l5
 --- 
 Lab6 - pointers.exe \labs\l6
 --- 
+Lab7 - hissing.exe \labs\l7
+--- 
 
 
 ----- FINISHED HW  ------
