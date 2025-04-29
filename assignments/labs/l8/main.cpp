@@ -71,7 +71,7 @@ void program() {
     printf("Done reading %zu data numbers.\n", size);
     printArray(nums, size);//print the array to check if the values are there
     findMaxAndMin(nums, size, max, min);
-    printf("Max = %u\n", max);
+    printf("Max = %i\n", max);
     //FIXME2: print Min value
 	printf("Min = %i\n", min); // FIXED
     printf("Sum = %lld\n",findSum(nums, size));
