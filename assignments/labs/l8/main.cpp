@@ -26,6 +26,7 @@ The lab demostrates the use of array and some operations on array.
 #include <cstdlib>
 #include <cstdio>
 
+
 using namespace std;
 
 using big_int = long long int;
@@ -72,7 +73,7 @@ void program() {
     findMaxAndMin(nums, size, max, min);
     printf("Max = %u\n", max);
     //FIXME2: print Min value
-	printf("Min = %u\n", min); // FIXED
+	printf("Min = %i\n", min); // FIXED
     printf("Sum = %lld\n",findSum(nums, size));
     cout << "Sorted list in ascending order:\n";
     bubbleSort(nums, size);
@@ -104,13 +105,15 @@ void findMaxAndMin(int nums[], int len, int &max, int &min)
 {
 	max = nums[0]; //say, max is the first element
 	min = nums[0]; //say, min is the first element
-	for (int i = 0; i < len; i++) {
+	for (int i = 0; i < len ; i++) {
 		if (max < nums[i]) //compare max with each element and update max if necessary
 			max = nums[i];
 
 		//FIXEME4: compare min with each element and update min
 		if (min > nums[i])
-			min = nums[i];
+			{
+				min = nums[i];
+			}
 			// FIXED
 	}
 }
@@ -142,8 +145,9 @@ void bubbleSort(int nums[], int len)
 big_int findSum(int nums[], int len)
 {
 	big_int sum = 0;
+	
 	//FIXME6: iterate through nums array and add each element to sum
-	for (int i = 0; i <= nums[len]; i++)
+	for (int i = 0; i <= len; i++)
 	{
 		sum += nums[i]; 
 	}

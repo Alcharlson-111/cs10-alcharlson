@@ -26,3 +26,6 @@ all:
 # delete object and binary files
 clean:
 	rm -f $(PROGRAM) *.o
+
+run:
+	./$(PROGRAM)
