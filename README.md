@@ -33,3 +33,5 @@ HW4 - conitional.exe - \homework\hw4
 ---
 HW5 - random.exe - \homework\hw5 
 ---
+HW6 - fa.exe - \homework\hw6 
+---
