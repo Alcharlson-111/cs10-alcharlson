@@ -51,17 +51,25 @@ int main()
     int choice;
     string octalNum, binary;
     do {
-        clearScreen();
+        //clearScreen();
         cout << "Program converts decimal number into binary and vice versa.\n";
         choice = menuOption();
         switch(choice) {
             case 1:
                 // FIXME3
-                cout << "FIXME\n";
+                cout << "Enter a positive decimal number:";
+                cin >> decimalNum;
+                binary = decToBin(decimalNum);
+                printf("(%llu) binary = (%s) base 2\n", decimalNum, binary.c_str());
+                // FIXED
                 break;
             case 2:
                 // FIXME4
-                cout << "FIXME\n";
+                cout << "Enter a binary number: ";
+                cin >> binary;
+                decimalNum = binToDec(binary);
+                printf("(%s) base 10 = (%llu) base 2\n", binary.c_str(), decimalNum);
+                // FIXED
                 break;
             case 3:
                 cout << "Enter a positive decimal number: ";
@@ -92,16 +100,47 @@ int main()
 
 string decToBin(llu num) {
     // FIXME5 - use algorithm step in Ch03-StdInputOutput chapter
+    vector<int> binary;
+    int divisor = 2;
+    llu quotient = num;
+    int remainder;
+
+    while (quotient != 0)
+    {
+        remainder = quotient % divisor;
+        quotient = quotient / divisor;
+        binary.push_back(remainder);
+    }
+
+    if (binary.empty())
+    {return 0;} // For edge case num == 0
+
+    string ans = "";
+    while(!binary.empty())
+    {
+        ans += to_string(binary.back());
+        binary.pop_back();
+    }
+
     // or use hint from decToOct function
     
-    return to_string(num);
+    return ans; // FIXED
 }
 
 llu binToDec(string binaryNumber)
 {
     // FIXME6 - use algorithm described in Ch03-StdInputOutput chapter
+    llu ans = 0;
+    int exp = 0;
+
+    for (int i = binaryNumber.size() - 1; i >=0; i--)
+    {
+        int digit = binaryNumber[i] - '0';
+        ans += digit * pow(2, exp);
+        exp++;
+    }
     // or use hints from binToOct function
-    return 0;
+    return ans; // FIXED
 }
 
 string decToOct(llu num)
