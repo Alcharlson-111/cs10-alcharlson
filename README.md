@@ -18,7 +18,10 @@ Lab6 - pointers.exe \labs\l6
 --- 
 Lab7 - hissing.exe \labs\l7
 --- 
-
+Lab8 - array.exe \labs\l6
+--- 
+Lab9 - number.exe \labs\l7
+--- 
 
 ----- FINISHED HW  ------
 //
