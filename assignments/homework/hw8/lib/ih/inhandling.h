@@ -1,9 +1,11 @@
-#pragma ONCE
+#ifndef inhandling_h
+#define inhandling_h
 
 #include <iostream>
 #include <fstream> 
 #include <string> 
 #include <sstream>
+#include <iomanip>
 
 using namespace std; 
 
@@ -32,3 +34,5 @@ void createlist(Node *& head, Student *& stu);
 void addStu(Node *& head, string filename);
 void freeLL(Node *& head);
 void printLL(Node *& head);
+
+#endif

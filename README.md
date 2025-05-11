@@ -37,3 +37,5 @@ HW6 - fa.exe - \homework\hw6
 ---
 HW7 - fa.exe - \homework\hw7 
 ---
+HW8 - struct.exe - \homework\hw7 
+---
