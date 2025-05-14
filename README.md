@@ -1,6 +1,9 @@
 ## CS10-Alcharlson
 "All assingments can be found in: cs10-alcharlson\assignments\"
 
+----- FINAL PROJECT ------
+Final - ttt.exe -- \final
+
 ----- FINISHED LABS ------
 //
 
@@ -18,9 +21,11 @@ Lab6 - pointers.exe \labs\l6
 --- 
 Lab7 - hissing.exe \labs\l7
 --- 
-Lab8 - array.exe \labs\l6
+Lab8 - array.exe \labs\l8
 --- 
-Lab9 - number.exe \labs\l7
+Lab9 - number.exe \labs\l9
+--- 
+Lab10 - fileio.exe \labs\l10
 --- 
 
 ----- FINISHED HW  ------
